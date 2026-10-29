@@ -1,35 +1,42 @@
 @import "tailwindcss";
 
+@config "../../tailwind.config.ts";
+
+/*
+ * Both themes are dark — the page is pure black so the glass keyboard
+ * can glow. The theme only changes the accent color (and the colors of
+ * the lights inside the 3D scene, see features/keyboard/palette.ts).
+ */
 :root,
 [data-theme="navy"] {
-  --background: 225 20% 85%;
-  --foreground: 222 47% 11%;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 96%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
+  --card: 240 6% 6%;
+  --card-foreground: 0 0% 96%;
 
-  --primary: 222 55% 28%;
-  --primary-foreground: 0 0% 100%;
-  --primary-50: 220 60% 96%;
-  --primary-100: 220 55% 90%;
-  --primary-200: 221 55% 80%;
-  --primary-300: 221 55% 68%;
-  --primary-400: 221 55% 52%;
-  --primary-500: 222 55% 40%;
-  --primary-600: 222 55% 32%;
-  --primary-700: 222 55% 24%;
-  --primary-800: 222 55% 16%;
-  --primary-900: 223 55% 10%;
+  --primary: 222 100% 70%;
+  --primary-foreground: 0 0% 4%;
+  --primary-50: 222 60% 12%;
+  --primary-100: 222 60% 16%;
+  --primary-200: 222 70% 26%;
+  --primary-300: 222 80% 40%;
+  --primary-400: 222 90% 55%;
+  --primary-500: 222 100% 65%;
+  --primary-600: 222 100% 74%;
+  --primary-700: 222 100% 82%;
+  --primary-800: 222 100% 90%;
+  --primary-900: 222 100% 96%;
 
-  --secondary: 210 40% 94%;
-  --secondary-foreground: 222 47% 11%;
+  --secondary: 240 5% 12%;
+  --secondary-foreground: 0 0% 96%;
 
-  --muted: 210 40% 94%;
-  --muted-foreground: 215 16% 47%;
+  --muted: 240 5% 12%;
+  --muted-foreground: 240 5% 60%;
 
-  --border: 214 32% 88%;
-  --input: 214 32% 88%;
-  --ring: 222 55% 40%;
+  --border: 240 5% 16%;
+  --input: 240 5% 16%;
+  --ring: 222 100% 65%;
 
   --destructive: 0 72% 51%;
   --destructive-foreground: 0 0% 100%;
@@ -38,34 +45,34 @@
 }
 
 [data-theme="pink"] {
-  --background: 305 84% 94%;
-  --foreground: 336 40% 15%;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 96%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 336 40% 15%;
+  --card: 330 8% 6%;
+  --card-foreground: 0 0% 96%;
 
-  --primary: 336 74% 45%;
-  --primary-foreground: 0 0% 100%;
-  --primary-50: 330 90% 97%;
-  --primary-100: 330 85% 92%;
-  --primary-200: 332 80% 85%;
-  --primary-300: 333 78% 74%;
-  --primary-400: 335 76% 63%;
-  --primary-500: 336 74% 51%;
-  --primary-600: 336 74% 42%;
-  --primary-700: 336 74% 33%;
-  --primary-800: 336 74% 24%;
-  --primary-900: 337 74% 15%;
+  --primary: 330 100% 70%;
+  --primary-foreground: 0 0% 4%;
+  --primary-50: 330 60% 12%;
+  --primary-100: 330 60% 16%;
+  --primary-200: 330 70% 26%;
+  --primary-300: 330 80% 40%;
+  --primary-400: 330 90% 55%;
+  --primary-500: 330 100% 65%;
+  --primary-600: 330 100% 74%;
+  --primary-700: 330 100% 82%;
+  --primary-800: 330 100% 90%;
+  --primary-900: 330 100% 96%;
 
-  --secondary: 330 60% 95%;
-  --secondary-foreground: 336 40% 15%;
+  --secondary: 330 6% 12%;
+  --secondary-foreground: 0 0% 96%;
 
-  --muted: 330 40% 95%;
-  --muted-foreground: 332 20% 45%;
+  --muted: 330 6% 12%;
+  --muted-foreground: 330 5% 60%;
 
-  --border: 330 40% 89%;
-  --input: 330 40% 89%;
-  --ring: 336 74% 51%;
+  --border: 330 6% 16%;
+  --input: 330 6% 16%;
+  --ring: 330 100% 65%;
 
   --destructive: 0 72% 51%;
   --destructive-foreground: 0 0% 100%;

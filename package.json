@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-bilingual-template",
+  "name": "keyber-3d",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,14 +10,19 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.3.3",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/postprocessing": "3.2.2",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "1.28.0",
     "next": "16.3.0",
     "next-intl": "4.13.5",
+    "postprocessing": "6.39.5",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "tailwind-merge": "3.6.0",
+    "three": "0.186.1",
     "zustand": "5.0.14"
   },
   "devDependencies": {
@@ -26,6 +31,7 @@
     "@types/node": "26.1.2",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",
+    "@types/three": "0.186.0",
     "autoprefixer": "10.5.4",
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.0",

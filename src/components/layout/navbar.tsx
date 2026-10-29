@@ -15,10 +15,10 @@ export function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur relative">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-black/70 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-lg font-bold text-primary" onClick={closeMenu}>
-          {t("brand")}
+          <bdi>{t("brand")}</bdi>
         </Link>
 
         <nav className="hidden items-center gap-6 sm:flex">

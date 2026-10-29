@@ -2,25 +2,15 @@
   "Nav": {
     "home": "Home",
     "about": "About",
-    "brand": "Next.js Template",
+    "brand": "keyber.",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
   "Home": {
-    "title": "Bilingual Next.js Starter Template",
-    "subtitle": "A complete starting point with Next.js, next-intl, Tailwind CSS, Zustand and shadcn/ui",
-    "cta": "Get Started",
-    "featuresTitle": "What's included",
-    "feature1Title": "Bilingual with next-intl",
-    "feature1Desc": "Full Persian and English support with automatic text direction (RTL/LTR)",
-    "feature2Title": "Two color themes",
-    "feature2Desc": "Navy and Pink themes with a smooth, animated switcher",
-    "feature3Title": "State management with Zustand",
-    "feature3Desc": "Theme and locale preferences persisted to localStorage",
-    "feature4Title": "shadcn/ui components",
-    "feature4Desc": "Button, Card and Theme Switcher, ready to extend on top of Tailwind",
-    "stackTitle": "What was used in the design?",
-    "stackDesc": "Tailwind CSS for styling, shadcn/ui for base components, the Vazirmatn font for Persian text, and global CSS variables for colors"
+    "eyebrow": "Part 01 — the look",
+    "title": "keyber.",
+    "subtitle": "A keyboard made of glass. Light bends through every keycap.",
+    "hint": "Drag to tilt · hover a key"
   },
   "About": {
     "title": "About this template",
@@ -36,6 +26,6 @@
     "switchLabel": "Switch color theme"
   },
   "Footer": {
-    "text": "Built with Next.js as a sample project template"
+    "text": "keyber. — a 3D glass keyboard, built with Next.js and React Three Fiber"
   }
 }

@@ -10,8 +10,8 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "Next.js Bilingual Template",
-  description: "A production-ready bilingual Next.js template",
+  title: "keyber. — glass keyboard",
+  description: "A 3D glass keyboard built with Next.js and React Three Fiber",
 };
 
 export function generateStaticParams() {
@@ -38,7 +38,7 @@ export default async function LocaleLayout({
   const dir = locale === "fa" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir}>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
