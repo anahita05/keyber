@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="navy"] {
+  --background: 225 20% 85%;
+  --foreground: 222 47% 11%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+
+  --primary: 222 55% 28%;
+  --primary-foreground: 0 0% 100%;
+  --primary-50: 220 60% 96%;
+  --primary-100: 220 55% 90%;
+  --primary-200: 221 55% 80%;
+  --primary-300: 221 55% 68%;
+  --primary-400: 221 55% 52%;
+  --primary-500: 222 55% 40%;
+  --primary-600: 222 55% 32%;
+  --primary-700: 222 55% 24%;
+  --primary-800: 222 55% 16%;
+  --primary-900: 223 55% 10%;
+
+  --secondary: 210 40% 94%;
+  --secondary-foreground: 222 47% 11%;
+
+  --muted: 210 40% 94%;
+  --muted-foreground: 215 16% 47%;
+
+  --border: 214 32% 88%;
+  --input: 214 32% 88%;
+  --ring: 222 55% 40%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --radius: 0.75rem;
+}
+
+[data-theme="pink"] {
+  --background: 305 84% 94%;
+  --foreground: 336 40% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 336 40% 15%;
+
+  --primary: 336 74% 45%;
+  --primary-foreground: 0 0% 100%;
+  --primary-50: 330 90% 97%;
+  --primary-100: 330 85% 92%;
+  --primary-200: 332 80% 85%;
+  --primary-300: 333 78% 74%;
+  --primary-400: 335 76% 63%;
+  --primary-500: 336 74% 51%;
+  --primary-600: 336 74% 42%;
+  --primary-700: 336 74% 33%;
+  --primary-800: 336 74% 24%;
+  --primary-900: 337 74% 15%;
+
+  --secondary: 330 60% 95%;
+  --secondary-foreground: 336 40% 15%;
+
+  --muted: 330 40% 95%;
+  --muted-foreground: 332 20% 45%;
+
+  --border: 330 40% 89%;
+  --input: 330 40% 89%;
+  --ring: 336 74% 51%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --radius: 0.75rem;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease;
+}
+
+[dir="rtl"] body {
+  font-family: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+}
+
+::view-transition-group(root) {
+  animation: none;
+}
+
+::view-transition-image-pair(root) {
+  isolation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+[data-theme-transition="to-navy"]::view-transition-old(root) {
+  z-index: 9999;
+  animation: theme-circle-shrink 1000ms ease-out forwards;
+}
+[data-theme-transition="to-navy"]::view-transition-new(root) {
+  z-index: 1;
+}
+
+[data-theme-transition="to-pink"]::view-transition-new(root) {
+  z-index: 9999;
+  animation: theme-circle-expand 1000ms ease-out forwards;
+}
+[data-theme-transition="to-pink"]::view-transition-old(root) {
+  z-index: 1;
+}
+
+@keyframes theme-circle-expand {
+  from {
+    clip-path: circle(
+      0% at var(--theme-transition-x) var(--theme-transition-y)
+    );
+  }
+  to {
+    clip-path: circle(
+      150vmax at var(--theme-transition-x) var(--theme-transition-y)
+    );
+  }
+}
+
+@keyframes theme-circle-shrink {
+  from {
+    clip-path: circle(
+      150vmax at var(--theme-transition-x) var(--theme-transition-y)
+    );
+  }
+  to {
+    clip-path: circle(
+      0% at var(--theme-transition-x) var(--theme-transition-y)
+    );
+  }
+}

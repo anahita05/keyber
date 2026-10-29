@@ -1,0 +1,41 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "brand": "Next.js Template",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Home": {
+    "title": "Bilingual Next.js Starter Template",
+    "subtitle": "A complete starting point with Next.js, next-intl, Tailwind CSS, Zustand and shadcn/ui",
+    "cta": "Get Started",
+    "featuresTitle": "What's included",
+    "feature1Title": "Bilingual with next-intl",
+    "feature1Desc": "Full Persian and English support with automatic text direction (RTL/LTR)",
+    "feature2Title": "Two color themes",
+    "feature2Desc": "Navy and Pink themes with a smooth, animated switcher",
+    "feature3Title": "State management with Zustand",
+    "feature3Desc": "Theme and locale preferences persisted to localStorage",
+    "feature4Title": "shadcn/ui components",
+    "feature4Desc": "Button, Card and Theme Switcher, ready to extend on top of Tailwind",
+    "stackTitle": "What was used in the design?",
+    "stackDesc": "Tailwind CSS for styling, shadcn/ui for base components, the Vazirmatn font for Persian text, and global CSS variables for colors"
+  },
+  "About": {
+    "title": "About this template",
+    "description": "This project is a ready-to-use template for quickly starting Next.js projects. Its main goal is to provide a clean, optimized and reusable structure that follows the DRY principle.",
+    "archTitle": "Project architecture",
+    "archDesc": "This project follows a Monolithic architecture, meaning all frontend parts live together in a single, unified project.",
+    "techTitle": "Technologies used",
+    "backToHome": "Back to home"
+  },
+  "Theme": {
+    "navy": "Navy",
+    "pink": "Pink",
+    "switchLabel": "Switch color theme"
+  },
+  "Footer": {
+    "text": "Built with Next.js as a sample project template"
+  }
+}
